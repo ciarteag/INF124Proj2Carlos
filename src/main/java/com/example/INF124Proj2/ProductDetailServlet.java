@@ -19,14 +19,16 @@ public class ProductDetailServlet extends HttpServlet {
         //the product id we are searching for
         String productId = request.getParameter("id");
         FileWriter fileWriter = new FileWriter(getServletContext().getRealPath("/clickOnProducts.txt"), true);
+        fileWriter.write("Product dsfdsfdsfdsf ");
+        fileWriter.close();
         HttpSession session = request.getSession(true);
         String userId = (String) session.getAttribute("UserID");
-        fileWriter.write("Product "+ productId + " has been clicked on by " + userId +"\n");
-        fileWriter.close();
+//        fileWriter.write("Product "+ productId + " has been clicked on by " + userId +"\n");
+//        fileWriter.close();
 
-            PrintWriter writer = response.getWriter();
-            writer.println("<html> <body>");
-            writer.println("<h1> product id: " + productId+ " user id: " + userId + "</h1>");
+//            PrintWriter writer = response.getWriter();
+//            writer.println("<html> <body>");
+//            writer.println("<h1> product id: " + productId+ " user id: " + userId + "</h1>");
 
 
 //        try {

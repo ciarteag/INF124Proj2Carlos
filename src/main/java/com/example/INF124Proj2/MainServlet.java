@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.concurrent.ThreadLocalRandom;
 
-@WebServlet(name = "MainServlet", value = "/")
+@WebServlet(name = "MainServlet", value = "")
 public class MainServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
